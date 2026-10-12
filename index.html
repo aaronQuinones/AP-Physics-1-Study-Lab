@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AP Physics Playground</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h2>🚀 Physics Playground</h2>
+    <span>AP PHYSICS 1</span>
+  </header>
+
+  <main>
+    <p class="eyebrow">YOUR PERSONAL SCIENCE LAB</p>
+    <h1>Motion <span>Mission!</span> 🚀</h1>
+    <p>Experiment with motion and discover the physics behind it.</p>
+
+    <section class="card">
+      <h2>🧪 Kinematics Simulator</h2>
+      <p>Change the initial velocity and acceleration, then launch!</p>
+
+      <label for="velocity">Initial velocity: <strong id="vLabel">5</strong> m/s</label>
+      <input id="velocity" type="range" min="-10" max="10" value="5" step="0.5">
+
+      <label for="acceleration">Acceleration: <strong id="aLabel">2</strong> m/s²</label>
+      <input id="acceleration" type="range" min="-5" max="5" value="2" step="0.5">
+
+      <canvas id="lab" aria-label="Animated kinematics simulation"></canvas>
+
+      <div class="buttons">
+        <button id="play">▶ Start mission</button>
+        <button id="reset">↻ Reset</button>
+      </div>
+
+      <div class="stats">
+        <div>TIME<strong id="time">0.00 s</strong></div>
+        <div>POSITION<strong id="position">0.00 m</strong></div>
+        <div>VELOCITY<strong id="speed">5.00 m/s</strong></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>🧠 Understand the physics</h2>
+      <p>Position with constant acceleration:</p>
+      <div class="equation">x = x₀ + v₀t + ½at²</div>
+      <p>Velocity with constant acceleration:</p>
+      <div class="equation">v = v₀ + at</div>
+      <p>Remember: velocity can change even when acceleration stays constant!</p>
+    </section>
+
+    <footer>One experiment at a time. 💜</footer>
+  </main>
+</body>
+</html>
